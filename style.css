@@ -1,38 +1,82 @@
 body {
     background-color: #27ae60;
-}
-
-h1, h2 {
     color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16pt;
 }
 
-input[type="text"] {
+.calculator {
+    position: relative;
+    top: 210px;
+}
+
+input, button {
     border: none;
-    padding: 2rem 4rem 2rem;
-    font-size: 30pt;
+    border-radius: 30px;
+    padding: 10px;
     text-align: center;
-}
-
-select {
-   background: transparent;
-   border: none;
-   font-size: 20pt;
-   color: white;
-
-}
-
-.page {
-    height: 100vh;
-}
-
-.input-elem {
-    margin: 1rem;
+    width: 250px;
 }
 
 button {
     border: solid 2px white;
-    background-color: transparent;
     color: white;
-    font-size: 20pt;
-    padding: 1rem 5rem 1rem;
+    margin-bottom: 20px;
+    margin-top: 45px;
+    background: none;
+    outline-style: none;
 }
+
+input:focus {
+    outline: 0;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background-color: #2c3e50ff;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.operations {
+    width: 180px;
+}
+
+.operation {
+    padding: 0;
+}
+
+input[type="number"] {
+    text-indent: 12px;
+}
+
+.operations input[type="radio"] {
+    display: none;
+}
+
+.operations input[type="radio"]:checked + label {
+    background: #2c3e50;
+}
+
+.operations input[type="radio"]:hover + label {
+    background: #34495e;
+    transition: .1s;
+}
+
+.operations label {
+    background: none;
+    border: 2px solid #fff;
+    cursor: pointer;
+    height: 35px;
+    margin: 0;
+    vertical-align: middle;
+    width: 35px;
+}
+ 
