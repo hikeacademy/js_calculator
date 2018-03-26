@@ -1,0 +1,38 @@
+body {
+    background-color: #27ae60;
+}
+
+h1, h2 {
+    color: white;
+}
+
+input[type="text"] {
+    border: none;
+    padding: 2rem 4rem 2rem;
+    font-size: 30pt;
+    text-align: center;
+}
+
+select {
+   background: transparent;
+   border: none;
+   font-size: 20pt;
+   color: white;
+
+}
+
+.page {
+    height: 100vh;
+}
+
+.input-elem {
+    margin: 1rem;
+}
+
+button {
+    border: solid 2px white;
+    background-color: transparent;
+    color: white;
+    font-size: 20pt;
+    padding: 1rem 5rem 1rem;
+}
