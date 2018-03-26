@@ -7,8 +7,16 @@ body {
 
 .calculator {
     position: relative;
-    top: 13rem;
+    top: 50px;
 }
+
+@media (min-width: 576px) {
+    .calculator {
+        position: relative;
+        top: 13rem;
+    }
+}
+
 
 input, button {
     border: none;
