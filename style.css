@@ -7,7 +7,7 @@ body {
 
 .calculator {
     position: relative;
-    top: 210px;
+    top: 13rem;
 }
 
 input, button {
@@ -53,10 +53,6 @@ button:hover {
     padding: 0;
 }
 
-input[type="number"] {
-    text-indent: 12px;
-}
-
 .operations input[type="radio"] {
     display: none;
 }
@@ -79,4 +75,3 @@ input[type="number"] {
     vertical-align: middle;
     width: 35px;
 }
- 
