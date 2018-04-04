@@ -1,7 +1,7 @@
 document.getElementById('calculate-button').onclick = function() {
     // Get numbers we'll use for calculations.
-    var num1 = parseInt(document.getElementById('elem-1').value);
-    var num2 = parseInt(document.getElementById('elem-2').value);
+    let num1 = parseInt(document.getElementById('elem-1').value);
+    let num2 = parseInt(document.getElementById('elem-2').value);
 
     if(isNaN(num1)) {
         // Case in which first input was empty
@@ -13,11 +13,11 @@ document.getElementById('calculate-button').onclick = function() {
         document.getElementById('elem-2').focus();
     } else {
         // Get chosen operation
-        var choice = document.querySelector('input[name="operation"]:checked');
-        var operation = choice.value;
+        let choice = document.querySelector('input[name="operation"]:checked');
+        let operation = choice.value;
 
         // Calculate and display result
-        var result = getResult(num1, num2, operation);
+        let result = getResult(num1, num2, operation);
         document.getElementById('result').innerHTML = result;
     }
 }
